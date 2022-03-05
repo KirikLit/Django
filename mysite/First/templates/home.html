@@ -1,0 +1,11 @@
+<FONT FACE="Segoe UI" size="8" align="center"><h1>Доска сообщений</h1></FONT>
+<style>
+    body {
+        background: linear-gradient(45deg, #00a2ff, #00ff7b);
+}
+</style>
+<ul>
+    {% for post in all_posts_list %}
+        <FONT FACE="Segoe UI" size="4" color="grey" align="center" ><h1>{{ post.text }}</h1></FONT>
+    {% endfor %}
+</ul>
